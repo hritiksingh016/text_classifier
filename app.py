@@ -1,10 +1,10 @@
 from flask import Flask, render_template, request  
 import pickle
 import numpy as np
-from flask_ngrok import run_with_ngrok
+# from flask_ngrok import run_with_ngrok
 
 app = Flask(__name__)
-run_with_ngrok(app)
+# run_with_ngrok(app)
 
 # Load the TF-IDF vocabulary specific to the category
 with open(r"toxic_vect.pkl", "rb") as f:
